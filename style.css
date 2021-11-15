@@ -127,7 +127,7 @@ body{
 
     margin: 50px;
     width: 80%;
-    min-height: 250px;
+    height: 250px;
     margin: 50px auto;
     border-radius: 8px;
     
@@ -214,11 +214,12 @@ body{
 #github{
     width: 100%;
     height: 200px;
-    
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-top: 20px;
+    margin: 5px;
 }
 
 #linkedin{
@@ -228,7 +229,8 @@ body{
     flex-direction: row;
     align-items: center;
     padding-top: 20px;
-    
+    margin: 5px;
+    overflow: hidden;
 }
 #github a, #linkedin a{
     text-decoration: none;
@@ -293,3 +295,105 @@ footer li a{
     scroll-margin-top: .8em;
 }
 
+@media (max-width: 2500px) {
+    #content{
+        width: 100%;
+    }
+    #linguagensPage{
+        width: 80%;
+    }
+    #contactArea{
+        width: 80%;
+    }
+}
+@media (max-width: 1700px) {
+    #content{
+        width: 100%;
+    }
+    
+    #linguagensPage{
+        width: 90%;
+    }
+    #contactArea{
+        width: 90%;
+    }
+}
+@media (max-width: 1350px){
+    #content{
+        width: 100%;
+    }
+    #linguagenPage{
+        width: 95%;
+        margin: 0;
+        padding: 0;
+    }
+    #contactArea{
+        width: 95%;
+    }
+}
+@media (max-width: 1000px){
+    #content{
+        width: 100%;
+    }
+    #about{
+        width: 95%;
+    }
+    #linguagenPage{
+        width: 100%;
+    }
+    #contactArea{
+        width: 100%;
+        padding-top: 150px;
+        margin: 0;
+    }
+    #htmlSection{
+        width: 100%;
+        box-shadow: none;
+    }
+    #cssSection{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+}
+@media (max-width:750px) {
+    #navbar ul{
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    #about{
+       width: 100%;
+       margin: 5px;
+    }
+    #linguagensPage{
+        margin: 0 auto;
+        width: 100vw;
+    }
+    #htmlSection, #cssSection{
+        width: 100%;
+        margin: 0 auto;
+        height: 150px;
+    }
+    #htmlSection p, #cssSection p{
+        font-size: 18px;
+    }
+    #htmlSection img, #cssSection img{
+        width: 3em;
+        height: 3em;
+    }
+    #contactArea{
+        width: 100%;
+    }
+    #email, #links, #linkedin, #github{
+        width: 100%;
+    }
+    #email p, #github a, #linkedin a{
+        font-size: 18px;
+    }
+    #email img, #github img, #linkedin img{
+        width: 75px;
+        height: 75px;
+    }
+}
